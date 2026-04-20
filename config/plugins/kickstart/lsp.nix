@@ -78,6 +78,8 @@
       };
       rust_analyzer = {
         enable = true;
+        installRustc = false;
+        installCargo = false;
       };
       jdtls = {
         enable = true;
