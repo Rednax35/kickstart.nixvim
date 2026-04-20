@@ -86,7 +86,7 @@
       };
       omnisharp = {
         enable = true;
-        package = pkgs.omnisharp;
+        package = pkgs.omnisharp-roslyn;
         cmd = [
           "OmniSharp"
           "-z"
