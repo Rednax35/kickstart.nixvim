@@ -86,15 +86,15 @@
       };
       omnisharp = {
         enable = true;
-        package = pkgs.omnisharp-roslyn;
-        #cmd = [
-        #  "OmniSharp"
-        #  "-z"
-        #  "DotNet:enablePackageRestore=false"
-        #  "--encoding"
-        #  "utf-8"
-        #  "--languageserver"
-        #];
+        #package = pkgs.omnisharp-roslyn;
+        cmd = [
+          "OmniSharp"
+          "-z"
+          "DotNet:enablePackageRestore=false"
+          "--encoding"
+          "utf-8"
+          "--languageserver"
+        ];
         filetypes = [
           "cs"
           "vb"
