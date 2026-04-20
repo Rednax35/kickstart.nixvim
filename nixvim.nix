@@ -118,18 +118,18 @@ in
   # Don't forget to disable the colorschemes you arent using
   #
   # If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-  colorschemes = {
-    catppuccin = {
-      enable = true;
-      autoLoad = true;
-      settings = {
-        flavour = "mocha";
+  #colorschemes = {
+  #  catppuccin = {
+  #    enable = true;
+  #    autoLoad = true;
+  #    settings = {
+  #      flavour = "mocha";
 
         # Needed to keep terminal transparency, if any
-        transparent_background = false;
-      };
-    };
-  };
+  #      transparent_background = false;
+  #    };
+  #  };
+  #};
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#globals
   globals = {
