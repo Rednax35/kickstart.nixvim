@@ -25,11 +25,11 @@ in
     #  Here are some example plugins that I've included in the Kickstart repository.
     #  Uncomment any of the lines below to enable them (you will need to restart nvim).
     #
-    # ./config/plugins/kickstart/debug.nix
-    # ./config/plugins/kickstart/indent-blankline.nix
-    # ./config/plugins/kickstart/lint.nix
-    # ./config/plugins/kickstart/autopairs.nix
-    # ./config/plugins/kickstart/neo-tree.nix
+    ./config/plugins/kickstart/debug.nix
+    ./config/plugins/kickstart/indent-blankline.nix
+    ./config/plugins/kickstart/lint.nix
+    ./config/plugins/kickstart/autopairs.nix
+    ./config/plugins/kickstart/neo-tree.nix
     #
     # NOTE: Configure your own plugins `see https://nix-community.github.io/nixvim/`
     # Add your plugins to ./config/plugins/custom and import them below
@@ -118,18 +118,18 @@ in
   # Don't forget to disable the colorschemes you arent using
   #
   # If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-  #colorschemes = {
-  #  catppuccin = {
-  #    enable = true;
-  #    autoLoad = true;
-  #    settings = {
-  #      flavour = "mocha";
+  colorschemes = {
+    catppuccin = {
+      enable = true;
+
+      settings = {
+        flavour = "mocha";
 
         # Needed to keep terminal transparency, if any
-  #      transparent_background = false;
-  #    };
-  #  };
-  #};
+        transparent_background = false;
+      };
+    };
+  };
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#globals
   globals = {
@@ -340,7 +340,7 @@ in
         source = "if_many";
       };
       underline = {
-        severity.__raw = ''vim.diagnostic.severity.ERROR'';
+        severity.__raw = "vim.diagnostic.severity.ERROR";
       };
       signs.__raw = ''
         vim.g.have_nerd_font and {
