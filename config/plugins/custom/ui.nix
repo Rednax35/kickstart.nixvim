@@ -1,5 +1,5 @@
 {
-  barbar = {
+  plugins.barbar = {
     enable = true;
     keymaps = {
       next.key = "<TAB>";
@@ -8,7 +8,7 @@
     };
   };
 
-  undotree = {
+  plugins.undotree = {
     enable = true;
     settings = {
       autoOpenDiff = true;
@@ -16,15 +16,15 @@
     };
   };
 
-  notify = {
+  plugins.notify = {
     enable = true;
   };
 
-  nui = {
+  plugins.nui = {
     enable = true;
   };
 
-  noice = {
+  plugins.noice = {
     enable = true;
   };
 
