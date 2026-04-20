@@ -5,7 +5,7 @@
   ...
 }:
 let
-  enable_nerd_fonts = false;
+  enable_nerd_fonts = true;
 in
 {
   imports = [
@@ -33,6 +33,7 @@ in
     #
     # NOTE: Configure your own plugins `see https://nix-community.github.io/nixvim/`
     # Add your plugins to ./config/plugins/custom and import them below
+    ./config/plugins/custom/ui.nix
   ];
 
   /*
