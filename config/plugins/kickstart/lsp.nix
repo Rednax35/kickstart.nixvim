@@ -101,8 +101,21 @@
         ];
 
       };
-      eslint = {
+      #eslint = {
+      #  enable = true;
+      #};
+      vtsls = {
         enable = true;
+        filetypes = [
+          "javascript"
+          "typescript"
+          "typescriptreact"
+          "javascriptreact"
+        ];
+        cmd = [
+          "vtsls"
+          "--stdio"
+        ];
       };
 
       # ...etc. See `https://nix-community.github.io/nixvim/plugins/lsp` for a list of pre-configured LSPs
