@@ -378,7 +378,7 @@ in
     # Detect tabstop and shiftwidth automatically
     # https://nix-community.github.io/nixvim/plugins/sleuth/index.html
     guess-indent = {
-      enable = false;
+      enable = true;
     };
   };
 
