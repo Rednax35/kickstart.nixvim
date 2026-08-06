@@ -389,6 +389,9 @@ in
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#extraconfigluapost
   extraConfigLuaPost = ''
+    vim.opt_local.tabstop = 4      -- Visual width of an actual tab character
+    vim.opt_local.softtabstop = 4  -- Number of spaces inserted when hitting Tab
+    vim.opt_local.shiftwidth = 4   -- Number of spaces used for auto-indentation (<< and >>)
     -- The line beneath this is called `modeline`. See `:help modeline`
     -- vim: ts=2 sts=2 sw=2 et
     local groups = { "Normal", "NormalFloat", "FloatBorder", "Pmenu", "SignColumn", "LineNr", "EndOfBuffer" }
