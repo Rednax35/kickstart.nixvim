@@ -121,12 +121,6 @@ in
   #
   # If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
   colorschemes = {
-    base16 = {
-      enable = true;
-      package = pkgs.vimPlugins.base16-nvim;
-      autoLoad = false;
-      callSetup = false;
-    };
     catppuccin = {
       enable = false;
 
@@ -391,6 +385,7 @@ in
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#extraplugins
   extraPlugins = with pkgs.vimPlugins; [
+    base16-nvim
     # NOTE: This is where you would add a vim plugin that is not implemented in Nixvim, also see extraConfigLuaPre below
   ];
 
