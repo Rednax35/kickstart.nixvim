@@ -123,7 +123,9 @@ in
   colorschemes = {
     base16 = {
       enable = true;
+      package = pkgs.vimPlugins.base16-nvim;
       autoLoad = false;
+      callSetup = false;
     };
     catppuccin = {
       enable = false;
