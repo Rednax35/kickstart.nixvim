@@ -133,17 +133,6 @@ in
     };
   };
 
-  colorschemes.base16 = {
-    enable = true;
-
-    colorscheme = helpers.mkRaw ''
-      pcall(function()
-        local matugen = require("matugen-theme")
-        return matugen
-      end)
-    '';
-  };
-
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#globals
   globals = {
     # Set <space> as the leader key
@@ -398,6 +387,10 @@ in
   extraPlugins = with pkgs.vimPlugins; [
     # NOTE: This is where you would add a vim plugin that is not implemented in Nixvim, also see extraConfigLuaPre below
   ];
+
+  extraConfigLua = ''
+    require("matugen").setup()
+  '';
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#extraconfigluapost
   extraConfigLuaPost = ''

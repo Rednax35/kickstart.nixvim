@@ -28,4 +28,8 @@
     enable = true;
   };
 
+  plugins.base16-colorscheme = {
+    enable = true;
+  };
+
 }
