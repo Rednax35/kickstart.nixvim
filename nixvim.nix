@@ -6,6 +6,7 @@
 }:
 let
   enable_nerd_fonts = true;
+  helpers = config.lib.nixvim;
 in
 {
   imports = [
@@ -135,7 +136,7 @@ in
   colorschemes.base16 = {
     enable = true;
 
-    colorscheme = lib.mkRaw ''
+    colorscheme = helpers.mkRaw ''
       pcall(function()
         local matugen = require("matugen-theme")
         return matugen
