@@ -121,7 +121,7 @@ in
   # If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
   colorschemes = {
     catppuccin = {
-      enable = true;
+      enable = false;
 
       settings = {
         flavour = "mocha";
@@ -130,6 +130,17 @@ in
         transparent_background = false;
       };
     };
+  };
+
+  colorschemes.base16 = {
+    enable = true;
+
+    colorscheme = lib.mkRaw ''
+      pcall(function()
+        local matugen = require("matugen-theme")
+        return matugen
+      end)
+    '';
   };
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#globals
@@ -384,13 +395,11 @@ in
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#extraplugins
   extraPlugins = with pkgs.vimPlugins; [
-    base16-nvim
     # NOTE: This is where you would add a vim plugin that is not implemented in Nixvim, also see extraConfigLuaPre below
   ];
 
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#extraconfigluapost
   extraConfigLuaPost = ''
-    require('matugen').setup()
     vim.opt_local.tabstop = 4      -- Visual width of an actual tab character
     vim.opt_local.softtabstop = 4  -- Number of spaces inserted when hitting Tab
     vim.opt_local.shiftwidth = 4   -- Number of spaces used for auto-indentation (<< and >>)
