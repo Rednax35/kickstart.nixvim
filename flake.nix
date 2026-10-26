@@ -1,5 +1,5 @@
 {
-  description = "Nix/Nixvim implementation of kickstart.nvim";
+  description = "Nix/Nixvim implementation of kickstart.nvim"
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

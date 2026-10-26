@@ -4,6 +4,10 @@
   # https://nix-community.github.io/nixvim/plugins/fidget/index.html
   plugins.fidget = {
     enable = true;
+    settings.notification.window = {
+      max_height = 100;
+      max_width = 100;
+    };
   };
 
   # https://nix-community.github.io/nixvim/NeovimOptions/autoGroups/index.html
