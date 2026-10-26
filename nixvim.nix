@@ -388,11 +388,6 @@ in
     base16-nvim
     # NOTE: This is where you would add a vim plugin that is not implemented in Nixvim, also see extraConfigLuaPre below
   ];
-
-  extraConfigLua = ''
-    require("matugen").setup()
-  '';
-
   # https://nix-community.github.io/nixvim/NeovimOptions/index.html#extraconfigluapost
   extraConfigLuaPost = ''
     vim.opt_local.tabstop = 4      -- Visual width of an actual tab character
