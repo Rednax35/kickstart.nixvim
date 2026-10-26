@@ -1,11 +1,6 @@
 {
-  plugins.barbar = {
+  plugins.bufferline = {
     enable = true;
-    keymaps = {
-      next.key = "<TAB>";
-      previous.key = "<S-TAB>";
-      close.key = "<C-w>";
-    };
   };
 
   plugins.undotree = {
