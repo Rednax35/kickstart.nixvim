@@ -3,7 +3,7 @@
   # Useful status updates for LSP.
   # https://nix-community.github.io/nixvim/plugins/fidget/index.html
   plugins.fidget = {
-    enable = true;
+    enable = false;
     settings.notification.window = {
       max_height = 100;
       max_width = 100;
