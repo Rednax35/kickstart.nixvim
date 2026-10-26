@@ -18,14 +18,11 @@
 
   plugins.notify = {
     enable = true;
+    settings = {
+      render = "minimal";
+      timeout = 3000;
+      fps = 0;
+      stages = "static";
+    };
   };
-
-  plugins.nui = {
-    enable = true;
-  };
-
-  plugins.noice = {
-    enable = true;
-  };
-
 }
