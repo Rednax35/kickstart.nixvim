@@ -128,7 +128,7 @@ in
         flavour = "mocha";
 
         # Needed to keep terminal transparency, if any
-        transparent_background = false;
+        # transparent_background = false;
       };
     };
   };
